@@ -5,4 +5,4 @@ var words = ["dory", "nemo", "marlin", "becky", "gerald", "hank", "destiny", "sq
 
 var secret = words[Math.floor(Math.random() * words.length)];
 
-module.exports = secret;
+module.exports = secret; 

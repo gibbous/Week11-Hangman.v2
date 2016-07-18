@@ -4,13 +4,20 @@ var secret = require('./game.js');
 
 var LetterSpaces = function(secret){
   this.answerArray = [];
-  this.answerArray = answerArray();
-    for (var i = 0; i<word.length; i++){
+  this.makeArray = function(){
+    for (var i = 0; i < secret.length; i++){
      answerArray[i] = "_";
+     console.log(i);
+     
+    }
   }
-
 }
-console.log(secret);
-console.log("answerArray");
 
-module.exports = LetterSpaces;
+var answerArray = new LetterSpaces();
+
+//var answerArray = new LetterSpaces(secret);
+
+console.log(secret);
+console.log(answerArray);
+
+module.exports = LetterSpaces; 
